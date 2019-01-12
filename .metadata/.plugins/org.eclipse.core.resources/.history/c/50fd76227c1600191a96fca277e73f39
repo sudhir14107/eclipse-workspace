@@ -1,0 +1,27 @@
+package binarytoDec;
+
+import java.util.Scanner;
+
+public class GFG {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in=new Scanner(System.in);
+		int t=in.nextInt();
+		while(t>0)
+		{
+			int a=in.nextInt();
+			int sum=0,index=0;
+			while(a>0)
+			{
+				sum=(int) (sum+Math.pow((a%10), index));
+				index++;
+				a=a/10;
+			}
+			System.out.println(sum);
+			t--;	
+		}
+
+	}
+
+}

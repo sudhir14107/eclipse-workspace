@@ -1,0 +1,38 @@
+package numPlaindrome;
+
+import java.util.Scanner;
+
+public class GFG {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in=new Scanner(System.in);
+		int t=in.nextInt();
+		while(t>0)
+		{
+			int a=in.nextInt();
+			int sum=0,temp=a, tempsum=0;
+			while(a>0)
+			{
+				tempsum=tempsum+(a%10);
+				a=a/10;
+			}
+			a=tempsum;
+			while(tempsum>0) {
+				sum=(sum*10)+(tempsum%10);
+				tempsum=tempsum/10;
+			}
+			if(sum==a) {
+				System.out.println("Yes");
+			}
+			else {
+				System.out.println("No");
+			}
+			
+			t--;
+			
+		}
+
+	}
+
+}

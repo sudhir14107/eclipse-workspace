@@ -1,0 +1,23 @@
+package armstrong;
+
+import java.util.Scanner;
+
+public class GFG {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in=new Scanner(System.in);
+		int t=in.nextInt();
+		while(t>0)
+		{
+			int a=in.nextInt();
+			while(a>0) {
+				
+			}
+			t--;
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+class GFG 
+{ 
+	public static void main(String args[]) 
+    {
+		if (k % 3 == 1)
+
+			   System.out.print(k+ " ");
+    }
+}  
